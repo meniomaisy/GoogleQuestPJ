@@ -28,10 +28,8 @@ import spacy
 from qas.candidate_ans import get_candidate_answers
 from qas.classifier.question_classifier import classify_question
 from qas.constants import EN_MODEL_MD, EN_MODEL_DEFAULT, EN_MODEL_SM
-from qas.doc_search_rank import search_rank
 from qas.feature_extractor import extract_features
 from qas.query_const import construct_query
-from qas.wiki.wiki_search import search_wikipedia
 
 
 logger = logging.getLogger(__name__)
@@ -275,21 +273,6 @@ class QasInit:
         _logger.info("Query: {}".format(self.query))
         dfentry[2]="{}".format(self.query)
         insert(dfOut,dfentry)
-
-
-    def process_answer(self):
-
-        _logger.info("Retrieving {} Wikipedia pages...".format(self.search_depth))
-        search_wikipedia(self.question_keywords, self.search_depth)
-
-        # Anaphora Resolution
-        wiki_pages = search_rank(self.query)
-        _logger.info("Pages retrieved: {}".format(len(wiki_pages)))
-
-        self.candidate_answers, keywords = get_candidate_answers(self.query, wiki_pages, self.nlp)
-        _logger.info("Candidate answers ({}):\n{}".format(len(self.candidate_answers), '\n'.join(self.candidate_answers)))
-
-        return " ".join(self.candidate_answers)
 
 def activate(Qlist, dfOut):
     for question in Qlist:
