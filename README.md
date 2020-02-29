@@ -49,7 +49,7 @@ ModuleNotFoundError: No module named 'SOME_MODULE':
 
 ## Running
 
-Next step is to enter in the python Notebook and run:
+Next step is to enter the python Notebook and run:
 
 DataSiencePj - ver1.ipynb ## via Jupyter Notebook
 
