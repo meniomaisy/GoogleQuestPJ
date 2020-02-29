@@ -51,7 +51,7 @@ ModuleNotFoundError: No module named 'SOME_MODULE':
 
 Next step is to enter the python Notebook and run:
 
-DataSiencePj - ver1.ipynb ## via Jupyter Notebook
+Q&A-GoogleQuest.ipynb ## via Jupyter Notebook
 
 ## References
 
