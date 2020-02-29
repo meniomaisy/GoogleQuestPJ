@@ -4,7 +4,7 @@ School of Computer Science, Faculty of Exact Sciences, Tel-Aviv University
 https://en-exact-sciences.tau.ac.il/computer
 
 * 2019-2020 Data Science Workshop 
-* As part of the Workshop, out group (Maintainers) took the Kaggle's Google QUEST Q&A Labeling challenge:
+* As part of the Workshop, our group (Maintainers) took the Kaggle's Google QUEST Q&A Labelling challenge:
 
 Kaggle - Google QUEST Q&A Labeling:
 https://www.kaggle.com/c/google-quest-challenge
@@ -49,7 +49,6 @@ ModuleNotFoundError: No module named 'SOME_MODULE':
 
 ## Running
 
-Now both conntainers are up and running.
 Next step is to enter in the python Notebook and run:
 
 DataSiencePj - ver1.ipynb ## via Jupyter Notebook
@@ -66,6 +65,6 @@ For full project documentation please read:
 
 ### Maintainers
 * Anav Shapira
-* Mandy Rosemblaom
+* Mandy Rosemblaum
 * Meni Omaisy
 * Eliran Eitan
