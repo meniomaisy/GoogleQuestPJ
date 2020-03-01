@@ -56,7 +56,7 @@ Q&A-GoogleQuest.ipynb ## via Jupyter Notebook
 ## References
 
 For full project documentation please read:
-* Q&A document.docx
+* Q&A Google quest Documentation.docx
 
 ### Features
 
