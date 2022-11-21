@@ -5,7 +5,7 @@ spacy==2.1.4
 scikit-learn==0.21.2
 dill==0.2.9
 joblib==0.13.2 
-tensorflow==1.15.0 # downgraded CPU Version of TensorFlow
+tensorflow==2.9.3 # downgraded CPU Version of TensorFlow
 tensorflow-gpu  >= 1.11.0  # GPU version of TensorFlow
 tensorflow_hub
 numpy
